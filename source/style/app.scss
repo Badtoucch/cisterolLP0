@@ -1,0 +1,150 @@
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:700}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
+
+* {
+  box-sizing: border-box;
+}
+html, body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  font-family: Roboto, sans-serif;
+  background-color: #fff;
+  color: #000;
+  font-size: 16px;
+  line-height: normal;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.ib {
+  display: inline-block;
+}
+.wrapper {
+  box-sizing: border-box;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+input::-ms-clear {
+  display: none;
+}
+.title {
+
+}
+
+
+
+
+.btn {
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 22px;
+  width: 226px;
+  height: 59px;
+  box-shadow: inset 0 0 16px rgba(244, 160, 163, 0.17);
+  border-radius: 6px;
+  background-color: #e7a4a9;
+  background-image: linear-gradient(to right, #d01a2e 0%, #e86264 50%, #d01a2e 100%);
+  border-radius: 6px;
+  border-bottom: 4px solid #bb010e;
+  span{
+    font-size: 16px;
+  }
+}
+
+::-webkit-input-placeholder { color: #949494; font-weight: 400; }
+::-moz-placeholder          { color: #949494; font-weight: 400; } /* Firefox 19+ */
+:-moz-placeholder           { color: #949494; font-weight: 400; } /* Firefox 18- */
+:-ms-input-placeholder      { color: #949494; font-weight: 400; }
+
+.title {
+  font-size: 44px;
+  text-align: center;
+  line-height: 44px;
+  font-weight: 700;
+}
+
+
+
+@import "common/slick.scss";
+@import "common/slick-theme.scss";
+@import "common/header.scss";
+@import "common/statistics.scss";
+@import "common/methods.scss";
+@import "common/proved.scss";
+@import "common/advantages.scss";
+@import "common/relieves.scss";
+@import "common/proved2.scss";
+@import "common/sert.scss";
+@import "common/reviews.scss";
+@import "common/application.scss";
+@import "common/order.scss";
+@import "common/footer.scss";
+@import "common/popup.scss";
+
+
+
+@media screen and (max-width: 1190px){
+  .wrapper {
+    max-width: 1024px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .title {
+    font-size: 36px;
+    line-height: 1.2;
+  }
+}
+@media screen and (max-width: 1023px){
+  .wrapper {
+    max-width: 768px;
+  }
+  .title {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 767px){
+  .wrapper {
+    max-width: 640px;
+  }
+  .title {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 639px){
+  .wrapper {
+    max-width: 480px;
+  }
+  .title {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 1190px) {
+
+}
+@media screen and (max-width: 1023px) {
+
+}
+@media screen and (max-width: 767px) {
+
+}
+@media screen and (max-width: 639px) {
+
+}
