@@ -8,7 +8,7 @@ html, body {
   padding: 0;
   margin: 0;
   width: 100%;
-  font-family: Roboto, sans-serif;
+  font-family: "PT Sans", sans-serif;
   background-color: #fff;
   color: #000;
   font-size: 16px;
@@ -62,9 +62,18 @@ input::-ms-clear {
   background-color: #e7a4a9;
   background-image: linear-gradient(to right, #d01a2e 0%, #e86264 50%, #d01a2e 100%);
   border-radius: 6px;
+  border: none;
   border-bottom: 4px solid #bb010e;
+  text-align: center;
+  transition: all 0.3s ease;
   span{
     font-size: 16px;
+    display: block;
+  }
+  &:hover{
+        transition: all 0.2s ease;
+    border: none;
+
   }
 }
 

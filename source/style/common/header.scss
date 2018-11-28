@@ -1,0 +1,200 @@
+.header{
+	background: #f2fafa;
+position: relative;
+z-index: 1;
+	padding-top: 40px;
+	padding-bottom: 65px;
+	&-top{
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 40px;
+		&__links{
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+			}
+		&__link{
+			margin-left: 50px;
+			padding-left: 45px;
+			color: #4a4e7d;
+			line-height: 18px;
+			position: relative;
+		}
+		&__link:nth-child(1):before{
+			content: "";
+			position: absolute;
+			left: 0;
+			top: 3px;
+			background: url(../img/icon-cup.png) no-repeat center;
+			width: 25px;
+			height: 30px;
+		}
+		&__link:nth-child(2):before{
+			content: "";
+			position: absolute;
+			left: 0;
+			top: 5px;
+			background: url(../img/icon-reviews.png) no-repeat center;
+			width: 33px;
+			height: 30px;
+		}
+		&__link:nth-child(3):before{
+			content: "";
+			position: absolute;
+			left: 0;
+			top: 5px;
+			background: url(../img/icon-clinics.png) no-repeat center;
+			width: 21px;
+			height: 30px;
+		}
+		&__link:hover{
+			text-decoration: underline;
+		}	
+	}
+	&-logo{
+		color: #4baaa4;
+		font-size: 44px;
+		font-weight: 700;
+		line-height: 21.72px;
+	}
+	&-bottom{
+	display: flex;
+	justify-content: space-between;
+	&__title{
+		color: #000000;
+		font-size: 60px;
+		font-weight: 700;
+		line-height: 60px;
+	}
+	&__subtitle{
+		margin-top: 58px;
+		color: #4baaa4;
+		font-size: 26px;
+		font-weight: 700;
+		line-height: 28px;
+		}
+	&__lists{
+		margin-top: 70px;
+	}
+	&__list{
+		color: #232f2e;
+		font-size: 20px;
+		font-weight: 700;
+		margin-bottom: 22px;
+		padding-left: 40px;
+		position: relative;
+		&:before{
+			content: "";
+			position: absolute;
+			top: 12px;
+			left: 0;
+			background: url(../img/icon-lists.svg) no-repeat center;
+			height: 24px;
+			width: 16px;
+		}
+	}
+	&__box:nth-child(2){
+		position: relative;
+		width: 300px;
+		img{
+			position: absolute;
+			bottom: -95px;
+			left: -100px;
+			z-index: 5;
+		}
+	}
+}
+}
+.form{
+	width: 270px;
+	border: 4px solid #a5d7d4;
+	background-color: #ffffff;
+	padding: 22px 20px 35px;
+	&-title{
+		color: #3c3f52;
+		font-family: Roboto;
+		font-size: 19px;
+		font-weight: 700;
+		line-height: 22px;
+		text-align: center;
+	}
+	.date{
+		color: #4baaa4;
+		display: block;
+	}
+}
+.price{
+	margin-top: 15px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.old-price{
+	text-align: center;
+	position: relative;
+	.price-title{
+		color: #949494;
+		font-family: Roboto;
+		font-size: 13px;
+		font-weight: 400;
+		line-height: 24px;
+	}
+	.x_price_previous{
+		color: #a5d7d4;
+		font-size: 34px;
+		font-family: Roboto;
+		line-height: 36px;
+		letter-spacing: -1.6px;
+	}
+	.x_currency{
+		color: #a5d7d4;
+		font-family: Roboto;
+		font-size: 15px;
+	}
+	&:before,&:after{
+		content: "";
+		position: absolute;
+		top: 42px;
+		left: -5px;
+		width: 68px;
+		height: 1px;
+		background-color: #4baaa4;
+	}
+	&:before{
+		transform: rotate(-15deg);
+	}
+	&:after{
+		transform: rotate(15deg);
+	}
+}
+.new-price{
+	text-align: left;
+
+	.price-title{
+		color: #2b3541;
+		font-size: 13px;
+		font-family: Roboto;
+		font-weight: 400;
+		line-height: 24px;
+		padding-left: 2px;
+	}
+	.x_price_current{
+		font-size: 42px;
+		font-family: Roboto;
+		font-weight: 900;
+		letter-spacing: -2.1px;
+		color: #e14751;
+		line-height: 35px;
+	}
+	.x_currency{
+		color: #e14751;
+		font-family: Roboto;
+		font-size: 15px;
+		font-weight: 400;
+		
+	}
+}
