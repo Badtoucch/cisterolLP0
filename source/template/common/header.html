@@ -11,7 +11,7 @@
         <div class="header-bottom">
             <div class="header-bottom__box">
                 <h1 class="header-bottom__title">Цистит<br> больше не вернется!</h1>
-                <p class="header-bottom__subtitle">Препарат эффективен за счет технологии<br> СО2-нано-экстрагирования клюквы</p>
+                <p class="header-bottom__subtitle">Препарат эффективен за счет технологии<br> <span class="nowrap">СО2-нано-экстрагирования</span> клюквы</p>
                 <ul class="header-bottom__lists">
                     <li class="header-bottom__list">Больше никакой ноющей боли<br> и жжения при мочеиспускании</li>
                     <li class="header-bottom__list">Никаких внезапных, частых<br> и неуместных позывов в туалет</li>
@@ -27,9 +27,9 @@
                             <div class="new-price"><div class="price-title">Новая цена</div><span class="x_price_current">800</span> <span class="x_currency">руб</span></div>
                         </div>
                         <div class="quantity">Осталось <span class="lastpack">60</span> упаковок<br> со скидкой</div>
-                        <form method="POST" action="/submit" class="x_order_form">
-                            <input type="text" name="name" placeholder="Мое имя" required="">
-                            <input type="tel" name="phone" placeholder="Мой телефон" required="">
+                        <form method="POST" action="/submit" class="x_order_form order-form">
+                            <input class="order-form__name" type="text" name="name" placeholder="Мое имя" required="">
+                            <input class="order-form__phone" type="tel" name="phone" placeholder="Мой телефон" required="">
                             <button type="submit" class="btn">Заказать<span>со скидкой</span></button>
                         </form>
                         <div class="protection">Ваши данные защищены!</div>

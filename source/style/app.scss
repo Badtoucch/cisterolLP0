@@ -45,7 +45,9 @@ input::-ms-clear {
 .title {
 
 }
-
+.nowrap{
+  white-space: nowrap;
+}
 
 
 
@@ -56,8 +58,9 @@ input::-ms-clear {
   font-weight: 700;
   line-height: 22px;
   width: 226px;
-  height: 59px;
-  box-shadow: inset 0 0 16px rgba(244, 160, 163, 0.17);
+  height: 63px;
+  // box-shadow: inset 0 0 16px rgba(244, 160, 163, 0.17);
+  box-shadow: 0px 16px 32px -16px #e14751;   
   border-radius: 6px;
   background-color: #e7a4a9;
   background-image: linear-gradient(to right, #d01a2e 0%, #e86264 50%, #d01a2e 100%);
@@ -66,21 +69,36 @@ input::-ms-clear {
   border-bottom: 4px solid #bb010e;
   text-align: center;
   transition: all 0.3s ease;
+  padding: 11px 0;
   span{
     font-size: 16px;
     display: block;
   }
   &:hover{
+     border: none;
+     box-shadow: none;
         transition: all 0.2s ease;
-    border: none;
+   
 
   }
 }
 
-::-webkit-input-placeholder { color: #949494; font-weight: 400; }
-::-moz-placeholder          { color: #949494; font-weight: 400; } /* Firefox 19+ */
-:-moz-placeholder           { color: #949494; font-weight: 400; } /* Firefox 18- */
-:-ms-input-placeholder      { color: #949494; font-weight: 400; }
+::-webkit-input-placeholder { color: #949494;  font-family: Roboto;
+font-size: 16px;
+font-weight: 400;
+line-height: 45px;}
+::-moz-placeholder          { color: #949494;  font-family: Roboto;
+font-size: 16px;
+font-weight: 400;
+line-height: 45px;} /* Firefox 19+ */
+:-moz-placeholder           { color: #949494;  font-family: Roboto;
+font-size: 16px;
+font-weight: 400;
+line-height: 45px;} /* Firefox 18- */
+:-ms-input-placeholder      { color: #949494;  font-family: Roboto;
+font-size: 16px;
+font-weight: 400;
+line-height: 45px;}
 
 .title {
   font-size: 44px;
