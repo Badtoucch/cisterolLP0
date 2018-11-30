@@ -1,3 +1,284 @@
 .statistics{
 	padding-top: 140px;
+	padding-bottom: 70px;
+	&-conTop{
+		position: relative;
+		margin-top: 47px;
+		position: relative;
+		z-index: 2;
+		height: 457px;
+		display: flex;
+			justify-content: flex-end;
+			align-items: flex-end;
+		&:after{
+			content: "";
+		    position: absolute;
+		    left: 55.8%;
+		    transform: translate(-50%);
+		    top: -17px;
+		    background: url(../img/wand.png) no-repeat center;
+		    width: 501px;
+		    height: 246px;
+		}
+		&:before{
+			content: "";
+			position: absolute;
+			left: 50%;
+			top: 0;
+			transform: translate(-80%);
+			background: url(../img/statistics-bg.png) no-repeat center;
+			width: 1148px;
+			height: 557px;
+			z-index: -1;
+		}
+		&__img{
+			position: absolute;
+			top: 0;
+			left: 50%;
+			transform: translate(-98%);
+
+		}
+		&__text{
+			border-bottom: 4px solid #469f99;
+			width: 455px;
+			margin-bottom: 10px;
+			position: relative;
+			left: -14px;
+		}
+		&__title{
+			color: #4baaa4;
+			font-size: 28px;
+			font-weight: 700;
+			line-height: 26px;
+			margin-bottom: 10px;
+		}
+		&__subtitle{
+			color: #000000;
+			font-size: 20px;
+			font-weight: 400;
+			margin-bottom: 22px;
+			position: relative;
+			z-index: 1;
+			&:before{
+				content: "";
+				position: absolute;
+				left: 0;
+				top: 13px;
+				width: 354px;
+				height: 27px;
+				background-color: #e0f1ee;
+				z-index: -1;
+			}
+		}
+		&__title2{
+			color: #000000;
+			font-size: 40px;
+			font-weight: 700;
+			line-height: 40px;
+			margin-bottom: 30px;
+		}
+	}
+	&-conBottom{
+		padding-top: 45px;
+		&__subtitle2{
+			text-align: center;
+			color: #4baaa4;
+			font-size: 32px;
+			font-weight: 700;
+			line-height: 36px;
+		}
+	}
+}
+.signature-1{
+	position: absolute;
+	top: 191px;
+	width: 202px;
+	border-bottom: 1px solid #469f99;
+	padding-bottom: 7px;
+	left: 50%;
+	transform: translate(-254%);
+	color: #000000;
+	font-size: 18px;
+	font-style: italic;
+	line-height: 22px;
+}
+.signature-2{
+	    position: absolute;
+    top: 286px;
+    width: 414px;
+    border-bottom: 1px solid #469f99;
+    padding-bottom: 7px;
+    left: 50%;
+    transform: translate(-141%);
+    color: #000000;
+    font-size: 18px;
+    font-style: italic;
+    line-height: 22px;
+}
+@media screen and (max-width: 1190px){
+  .signature-1{
+	position: absolute;
+	top: 191px;
+	width: 195px;
+	border-bottom: 1px solid #469f99;
+	padding-bottom: 7px;
+	left: 50%;
+	transform: translate(-254%);
+	color: #000000;
+	font-size: 18px;
+	font-style: italic;
+	line-height: 22px;
+}
+.signature-2{
+	    position: absolute;
+    top: 286px;
+    width: 350px;
+    border-bottom: 1px solid #469f99;
+    padding-bottom: 7px;
+    left: 50%;
+    transform: translate(-141%);
+    color: #000000;
+    font-size: 18px;
+    font-style: italic;
+    line-height: 22px;
+}
+}
+@media screen and (max-width: 1023px){
+  .statistics{
+  	padding-top: 35px;
+  	padding-bottom: 36px;
+	
+	&-conTop{
+		background-color: #f3f7f6;
+		box-shadow: -1px 2px 38px 3px #D7F1F7;
+		&:after{
+	
+		}
+		&:before{
+			display: none;
+		}
+		&__img{
+	    transform: translate(-118%);
+
+		}
+		&__text{
+		width: 385px;
+		}
+		&__title{
+			font-size: 24px;
+			line-height: normal
+		}
+		&__subtitle{
+			margin-bottom: 10px;
+			&:before{
+				
+			}
+		}
+		&__title2{
+		font-size: 36px;
+		line-height: normal;
+		margin-bottom: 15px;
+		}
+	}
+	&-conBottom{
+		padding-top: 25px;
+		&__subtitle2{
+			    font-size: 28px;
+			    line-height: normal;
+		}
+	}
+}
+.signature-1{
+display: none;
+}
+.signature-2{
+display: none;
+}
+}
+@media screen and (max-width: 767px){
+  .statistics{
+padding-top: 25px;
+padding-bottom: 27px;
+	&-conTop{
+		justify-content: center;
+			height: 500px;
+		&:after{
+	background-size: 81%;
+		}
+		&:before{
+		
+		}
+		&__img{
+	width: 243px;
+
+		}
+		&__text{
+	width: 100%;
+	left: 0;
+	text-align: center;
+		}
+		&__title{
+			font-size: 20px;
+		}
+		&__subtitle{
+			font-size: 16px;
+			&:before{
+				display: none;
+			}
+		}
+		&__title2{
+		font-size: 32px;
+		line-height: 1;
+		}
+	}
+	&-conBottom{
+		
+		&__subtitle2{
+			font-size: 24px;
+			line-height: 1;
+		}
+	}
+}
+}
+@media screen and (max-width: 639px){
+  .statistics{
+
+	&-conTop{
+		margin-top: 25px;
+		&:after{
+display: none;
+		}
+		&:before{
+		
+		}
+		&__img{
+left: 50%;
+ transform: translate(-50%);
+		}
+		&__text{
+
+		}
+		&__title{
+		
+		}
+		&__subtitle{
+		
+			&:before{
+				
+			}
+		}
+		&__title2{
+	
+		}
+	}
+	&-conBottom{
+		
+		&__subtitle2{
+			br{
+				display: none;
+			}
+		}
+	}
+}
+
 }
