@@ -1,0 +1,586 @@
+.methods {
+    padding: 75px 0;
+    background: url(../img/method-bg.png) no-repeat center #f2fafa;
+    background-position: -36% 100%;
+
+    .ramka {
+        border: 1px solid #edf3f8;
+        padding: 25px 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .title {
+        span {
+            font-size: 26px;
+            display: block;
+        }
+    }
+
+    &-boxs {
+        margin-top: 20px;
+        background-color: #fff;
+        padding: 10px;
+
+    }
+
+    &-box {
+        width: 33.3%;
+        padding: 0 20px;
+
+        &:nth-child(2) {
+            border-right: 1px solid rgba(222, 230, 229, 0.9);
+            border-left: 1px solid rgba(222, 230, 229, 0.9);
+        }
+
+        &__title {
+            color: #000000;
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 34px;
+            padding-left: 47px;
+            margin-top: 20px;
+            position: relative;
+            padding-bottom: 26px;
+            border-bottom: 4px solid #469f99;
+
+            &:before {
+                content: "";
+                position: absolute;
+                top: -8px;
+                left: 0;
+                background: url(../img/method-title-icon1.png) no-repeat;
+                width: 32px;
+                height: 56px;
+            }
+        }
+
+        &__title2 {
+            padding-left: 78px;
+
+            &:before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                background: url(../img/method-title-icon2.png) no-repeat;
+                width: 55px;
+                height: 36px
+            }
+        }
+
+        &__title3 {
+            padding-left: 84px;
+
+            &:before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                background: url(../img/method-title-icon3.png) no-repeat;
+                width: 57px;
+                height: 57px;
+            }
+        }
+
+        &__name {
+            margin-top: 92px;
+            margin-bottom: 60px;
+            font-size: 20px;
+            font-weight: 400;
+            color: #000000;
+            margin-left: 122px;
+            border-bottom: 4px solid #e9f4f4;
+            width: 120px;
+            position: relative;
+
+            span {
+                font-size: 16px;
+                color: #469f99;
+            }
+
+            &:before {
+                content: "";
+                position: absolute;
+                top: -68px;
+                left: -123px;
+                background: url(../img/smile1.png) no-repeat center;
+                width: 108px;
+                height: 144px;
+
+            }
+        }
+
+        &__name2 {
+            margin-left: 139px;
+
+            &:before {
+                background: url(../img/smile2.png) no-repeat center;
+                top: -77px;
+                left: -136px;
+                width: 125px;
+                height: 153px;
+            }
+        }
+
+        &__name3 {
+            &:before {
+                background: url(../img/smile3.png) no-repeat center;
+                width: 108px;
+                height: 148px;
+                top: -71px;
+            }
+        }
+
+        &__subtitle1 {
+            color: #000000;
+            font-size: 19px;
+            font-style: italic;
+            line-height: 25px;
+            position: relative;
+            z-index: 1;
+
+            &:before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 325px;
+                height: 65px;
+                background-color: #e9f4f4;
+                z-index: -1;
+            }
+
+            &:after {
+                content: "”";
+                color: #469f99;
+                font-size: 120px;
+                font-weight: 700;
+                line-height: 26px;
+                position: absolute;
+                right: 22px;
+                bottom: -30px;
+                font-style: normal;
+            }
+        }
+
+        &__subtitle1-2 {
+            &:before {
+                top: 2px;
+                height: 87px;
+            }
+        }
+
+        &__subtitle1-3 {
+            &:before {
+                top: 2px;
+                height: 87px;
+            }
+        }
+
+        &__comment {
+            margin-top: 115px;
+            padding-left: 123px;
+            color: #010101;
+            font-size: 26px;
+            font-weight: 700;
+            line-height: 28px;
+            position: relative;
+            margin-bottom: 37px;
+
+            &:before {
+                content: "";
+                position: absolute;
+                top: -50px;
+                left: 0px;
+                background: url(../img/unsmile1.png) no-repeat center;
+                width: 108px;
+                height: 144px;
+            }
+        }
+
+        &__comment2 {
+            margin-top: 90px;
+
+            &:before {
+
+                top: -60px;
+                left: -10px;
+                background: url(../img/unsmile2.png) no-repeat center;
+                width: 130px;
+                height: 153px;
+            }
+        }
+
+        &__comment3 {
+            margin-top: 90px;
+
+            &:before {
+
+                top: -60px;
+                left: 0px;
+                background: url(../img/unsmile3.png) no-repeat center;
+                width: 108px;
+                height: 153px;
+            }
+        }
+
+        &__subtitle2 {
+            color: #010101;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 26px;
+            margin-bottom: 30px;
+        }
+    }
+
+    &-boxs2 {
+        display: block;
+        width: 960px;
+        margin: 100px auto 0;
+        padding-left: 235px;
+        position: relative;
+
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: -72px;
+            background: url(../img/method-girl.png) no-repeat center;
+            width: 140px;
+            height: 310px;
+        }
+
+        &__title {
+            color: #eb1c1a;
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 20px;
+            margin-bottom: 15px;
+        }
+
+        &__subtitle {
+            color: #000000;
+            font-size: 26px;
+            font-weight: 700;
+            line-height: 32px;
+        }
+    }
+}
+
+@media screen and (max-width: 1190px) {
+    .methods {
+
+
+
+        .title {
+            span {
+                font-size: 22px;
+                display: block;
+            }
+        }
+
+
+
+        &-box {
+            width: 33.3333333%;
+            padding: 0 15px;
+
+          
+
+            &__title {
+                font-size: 25px;
+
+
+            }
+
+
+
+
+
+            &__subtitle1 {
+                color: #000000;
+                font-size: 17px;
+                font-style: italic;
+                line-height: 25px;
+                position: relative;
+                z-index: 1;
+
+                br {
+                    display: none;
+                }
+
+                &:before {
+                    display: none;
+                }
+
+            }
+
+
+
+            &__comment {
+                font-size: 22px;
+                line-height: normal;
+            }
+
+            &__subtitle2 {
+                font-size: 16px;
+                line-height: normal;
+            }
+        }
+
+ 
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .methods {
+        padding-top: 35px;
+        padding-bottom: 40px;
+
+    
+
+
+
+        &-box {
+
+
+            &__title {
+                font-size: 23px;
+                line-height: 1;
+                padding-bottom: 10px;
+                text-align: center;
+                padding-top: 50px;
+                padding-left: 0;
+
+                &:before {
+                    left: 50%;
+                    transform: translate(-50%);
+                }
+            }
+
+
+
+            &__name {
+                margin-left: 0;
+                display: block;
+                margin-right: auto;
+                margin-left: auto;
+                margin-top: 190px;
+                margin-bottom: 15px;
+
+
+
+
+                &:before {
+                    top: -160px;
+                    left: 0;
+
+                }
+            }
+
+
+
+
+
+            &__subtitle1 {
+
+                font-size: 16px;
+                line-height: normal;
+
+                &:after {
+                    display: none;
+                }
+
+            }
+
+            &__comment {
+                padding-left: 0;
+                font-size: 20px;
+                text-align: center;
+                margin-top: 170px;
+                margin-bottom: 15px;
+                line-height: normal;
+
+                &:before {
+                    left: 50%;
+                    transform: translate(-50%);
+                    top: -155px;
+                }
+
+
+                span {
+                    white-space: normal;
+                }
+            }
+
+            &__comment1 {
+                margin-top: 190px;
+
+                &:before {
+
+                    top: -150px;
+                }
+            }
+
+            &__subtitle2 {
+                font-size: 15px;
+                margin-bottom: 0;
+
+                br {
+                    display: none;
+
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .methods {
+        padding-top: 25px;
+        padding-bottom: 25px;
+
+        &-boxs2 {
+            width: 100%;
+            padding-left: 0;
+            text-align: center;
+            margin-top: 35px;
+
+            &:before {
+                display: none;
+
+            }
+
+            &__title {
+                font-size: 30px;
+                line-height: 1;
+                margin-bottom: 5px;
+            }
+
+            &__subtitle {
+                font-size: 21px;
+                line-height: normal;
+
+                br {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .methods {
+
+        .ramka {
+            flex-direction: column;
+            padding-bottom: 0px;
+        }
+
+        .title {
+            br {
+                display: none;
+            }
+
+            span {
+                font-size: 16px;
+            }
+        }
+
+        &-boxs {
+            width: 390px;
+            max-width: 100%;
+            display: block;
+            margin: 20px auto 0;
+        }
+
+        &-box {
+            width: 100%;
+            padding: 0 15px 25px;
+
+            &:nth-child(2) {
+                border: none;
+                border-top: 1px solid rgba(222, 230, 229, 0.9);
+                border-bottom: 1px solid rgba(222, 230, 229, 0.9);
+            }
+
+
+
+
+            &__comment {
+                padding-left: 0;
+                font-size: 20px;
+                text-align: center;
+                margin-top: 170px;
+                margin-bottom: 15px;
+                line-height: normal;
+
+                br {
+                    display: none;
+                }
+
+                &:before {
+                    left: 50%;
+                    transform: translate(-50%);
+                    top: -155px;
+                }
+
+
+                span {
+                    white-space: normal;
+                }
+            }
+
+            &__subtitle2 {
+                margin-bottom: 0;
+            }
+        }
+
+        &-boxs2 {
+            margin-top: 20px;
+
+            &__title {
+                font-size: 26px;
+            }
+
+            &__subtitle {
+                font-size: 17px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 639px) {
+    .methods {
+        &-box {
+            &__title {
+
+                line-height: 1;
+
+                &:before {
+                    top: -10px;
+                }
+            }
+        }
+    }
+
+    .methods-box__subtitle1:after {
+        display: none;
+    }
+
+    .methods-box__comment {
+        font-size: 17px;
+    }
+
+    .methods-box__subtitle2 {
+        br {
+            display: none;
+        }
+    }
+
+    .methods-box__comment .nowrap {
+        white-space: normal;
+    }
+}
