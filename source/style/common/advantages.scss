@@ -1,0 +1,642 @@
+.advantages {
+    padding-top: 75px;
+    padding-bottom: 80px;
+    background-color: #f2fafa;
+    position: relative;
+    z-index: 1;
+
+    &:before {
+       content: "";
+        position: absolute;
+        top: 185px;
+        left: 50%;
+        transform: translate(180%);
+        background: url(../img/advantages-bg.png) no-repeat center;
+        width: 289px;
+        height: 763px;
+        z-index: -1;
+
+    }
+
+    .title {
+        span {
+            font-size: 26px;
+            display: block;
+            line-height: 26px;
+            margin-top: 15px;
+        }
+    }
+
+    .line {
+        width: 170px;
+        height: 4px;
+        background-color: #000000;
+        display: block;
+        margin: 35px auto 45px;
+    }
+
+    &-content1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    &-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__text {
+            color: #000000;
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 34px;
+        }
+
+        &__equally {
+            font-size: 120px;
+            line-height: 1;
+            color: #469f99;
+        }
+
+        &__title {
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 1;
+            margin-bottom: 15px;
+        }
+
+        &__subtitle {
+            font-size: 18px;
+            font-weight: 400;
+        }
+    }
+
+    &-box1 {
+        width: 754px;
+    }
+
+    &-box2 {
+        display: block;
+        width: 353px;
+        margin-left: 63px;
+        background-color: #fff;
+    }
+
+    &-content2 {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 69px;
+
+        .frame {
+            width: 780px;
+            background-color: #ffffff;
+            padding: 10px;
+            box-shadow: -1px 4px 154px -16px rgba(204,227,223,1);
+        }
+
+        .frame2 {
+            width: 370px;
+        }
+
+        &__box {
+            border: 1px solid #edf3f8;
+            padding: 30px 50px 22px 25px;
+            ;
+        }
+
+        &__box2 {
+            padding: 10px 20px 0;
+        }
+
+        &__title {
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 36px;
+        }
+
+        &__subtitle {
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 30px;
+            margin-top: 5px;
+            margin-bottom: 28px;
+        }
+
+        &__text {
+            font-size: 18px;
+            line-height: 28px;
+            margin-bottom: 23px;
+        }
+
+        &__statboxs {
+            display: flex;
+            border-bottom: 4px solid #469f99;
+            padding-bottom: 21px;
+        }
+
+        &__statbox {
+            width: 50%;
+            text-align: center;
+            padding-right: 18px;
+
+            img {
+                margin-top: 10px;
+            }
+        }
+
+        &__statbox2 {
+            border-left: 2px solid #deeaf1;
+            padding-left: 14px;
+            padding-right: 0;
+            padding-bottom: 6px;
+        }
+
+        &__percent {
+            margin-top: 20px;
+            color: #469f99;
+            font-size: 44px;
+            font-weight: 700;
+            line-height: 33.4px;
+            position: relative;
+            z-index: 1;
+
+            &:before {
+                content: "";
+                position: absolute;
+                top: 15px;
+                left: 0;
+                width: 137px;
+                height: 24px;
+                background-color: #e8f4f4;
+                z-index: -1;
+            }
+
+            span {
+                font-size: 32px;
+                line-height: 30px;
+            }
+        }
+
+        &__percent2 {
+            color: #f14d32;
+
+            &:before {
+                width: 77px;
+                left: 50%;
+                transform: translate(-52%);
+            }
+        }
+
+        &__ciltext {
+            color: #000000;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 20px;
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        &__subtitle2 {
+            font-size: 18px;
+            font-weight: 700;
+            font-style: italic;
+            line-height: 28px;
+            margin-top: 15px;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 1190px) {
+    .advantages {
+
+
+        .title {
+            span {
+                font-size: 22px;
+                line-height: normal;
+                margin-top: 0;
+            }
+        }
+
+        .line {
+            margin-top: 20px;
+            margin-bottom: 25px;
+        }
+
+        &-content1 {
+            justify-content: center;
+            align-items: center;
+        }
+
+        &-box {
+
+
+            &__text {
+                font-size: 26px;
+                line-height: normal;
+            }
+
+            &__equally {}
+
+            &__title {
+                margin-bottom: 10px;
+            }
+
+            &__subtitle {
+                br {
+                    display: none;
+                }
+            }
+        }
+
+        &-box1 {}
+
+        &-box2 {
+            margin-top: 10px;
+            margin-left: 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        &-content2 {
+            margin-top: 40px;
+
+            .frame {}
+
+            .frame2 {}
+
+            &__box {
+                padding: 20px;
+            }
+
+            &__box2 {}
+
+            &__title {
+                font-size: 32px;
+            }
+
+            &__subtitle {
+                font-size: 20px;
+            }
+
+            &__text {
+                font-size: 17px;
+                margin-bottom: 18.3px;
+            }
+
+            &__statboxs {}
+
+            &__statbox {
+
+                img {}
+            }
+
+            &__statbox2 {}
+
+            &__percent {
+
+                span {}
+            }
+
+            &__percent2 {}
+
+            &__ciltext {}
+
+            &__subtitle2 {}
+        }
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .advantages {
+        padding-top: 35px;
+        padding-bottom: 40px;
+
+        .title {
+            span {
+                font-size: 20px;
+            }
+        }
+
+        .line {}
+
+        &-content1 {}
+
+        &-box {
+
+
+            &__text {
+                line-height: 1;
+            }
+
+            &__equally {}
+
+            &__title {}
+
+            &__subtitle {}
+        }
+
+        &-box1 {
+            margin-right: 15px;
+        }
+
+        &-box2 {}
+
+        &-content2 {
+            margin-top: 30px;
+
+            .frame {}
+
+            .frame2 {
+                padding-left: 0;
+            }
+
+            &__box {
+
+                ;
+            }
+
+            &__box2 {}
+
+            &__title {
+                font-size: 28px;
+                line-height: normal;
+            }
+
+            &__subtitle {
+                font-size: 18px;
+                line-height: normal;
+                margin-bottom: 20px;
+            }
+
+            &__text {
+                font-size: 16px;
+                margin-bottom: 11.7px;
+                line-height: 20px;
+            }
+
+            &__statboxs {}
+
+            &__statbox {
+
+                img {}
+            }
+
+            &__statbox2 {}
+
+            &__percent {
+                font-size: 30px;
+
+                &:before {
+                    display: none;
+                }
+
+                span {}
+            }
+
+            &__percent2 {}
+
+            &__ciltext {
+                font-size: 15px;
+                line-height: normal;
+            }
+
+            &__subtitle2 {
+                font-size: 16px;
+                line-height: normal;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .advantages {
+
+        padding-top: 25px;
+        padding-bottom: 25px;
+
+        .title {
+            span {
+                font-size: 18px;
+            }
+        }
+
+        .line {
+            margin-top: 15px;
+            margin-bottom: 0;
+        }
+
+        &-content1 {}
+
+        &-box {
+
+
+            &__text {
+                font-size: 22px;
+            }
+
+            &__equally {
+                font-size: 100px;
+            }
+
+            &__title {
+                font-size: 18px;
+            }
+
+            &__subtitle {
+                font-size: 16px;
+            }
+        }
+
+        &-box1 {
+            .pil {
+                width: 100px;
+            }
+
+            .libra {
+                width: 70px;
+            }
+        }
+
+        &-box2 {}
+
+        &-content2 {
+            margin-top: 20px;
+            flex-direction: column;
+
+            .frame {
+                width: 100%;
+            }
+
+            .frame2 {
+                padding-left: 10px;
+                padding-top: 0;
+            }
+
+            &__box {
+                padding: 10px;
+                padding-bottom: 0;
+            }
+
+            &__box2 {}
+
+            &__title {
+                text-align: center;
+                font-size: 22px;
+            }
+
+            &__subtitle {
+                text-align: center;
+                margin-bottom: 7px;
+            }
+
+            &__text {
+                margin-bottom: 10px;
+            }
+
+            &__statboxs {}
+
+            &__statbox {
+
+                img {}
+            }
+
+            &__statbox2 {}
+
+            &__percent {
+
+                span {}
+            }
+
+            &__percent2 {}
+
+            &__ciltext {}
+
+            &__subtitle2 {
+                margin-bottom: 10px;
+                text-align: center;
+
+                br {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 639px) {
+    .advantages {
+
+
+        .title {
+
+            span {
+                font-size: 17px;
+
+                br {
+                    display: none;
+                }
+            }
+        }
+
+        .line {}
+
+        &-content1 {}
+
+        &-box {
+
+
+            &__text {
+                text-align: center;
+
+                br {
+                    display: none;
+                }
+
+                margin-top: 10px;
+            }
+
+            &__equally {
+                font-size: 90px;
+                line-height: 75px;
+                transform: rotate(90deg);
+                text-align: center;
+                position: relative;
+                left: 4px;
+            }
+
+            &__title {}
+
+            &__subtitle {}
+        }
+
+        &-box1 {
+            flex-direction: column;
+            margin-right: 0;
+            margin-top: 15px;
+
+            .pil {
+                width: 140px;
+                position: relative;
+                left: 8px;
+            }
+
+            .libra {
+                width: 100px;
+            }
+        }
+
+        &-box2 {}
+
+        &-content2 {
+
+            .frame {}
+
+            .frame2 {}
+
+            &__box {
+
+                ;
+            }
+
+            &__box2 {}
+
+            &__title {
+                font-size: 20px;
+            }
+
+            &__subtitle {
+                font-size: 16px;
+            }
+
+            &__text {
+                font-size: 14px;
+            }
+
+            &__statboxs {}
+
+            &__statbox {
+
+                img {}
+            }
+
+            &__statbox2 {}
+
+            &__percent {
+
+                span {}
+            }
+
+            &__percent2 {}
+
+            &__ciltext {
+                font-size: 14px;
+            }
+
+            &__subtitle2 {}
+        }
+    }
+}

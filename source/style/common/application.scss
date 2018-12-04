@@ -1,0 +1,166 @@
+.application{
+	background-color: #f2fafa;
+	padding-top: 75px;
+	padding-bottom: 80px;
+	&-content{
+		margin-top: 50px;
+		display: flex;
+		justify-content: space-between;
+		&-box{
+			text-align: center;
+			width: 33.333%;
+			&:nth-child(2){
+				position: relative;
+				&:after{
+					content: "";
+					position: absolute;
+					left: 0px;
+					top: 46px;
+					width: 1px;
+					height: 170px;
+					background-color: #caeae1;
+				}
+				&:before{
+					content: "";
+					position: absolute;
+					right: 0px;
+					top: 46px;
+					width: 1px;
+					height: 170px;
+					background-color: #caeae1;
+				}
+			}
+		}
+		&__heading{
+			color: #000000;
+			font-size: 22px;
+			font-weight: 700;
+			line-height: 24px;
+			margin-top: 56px;
+		}
+	}
+}
+@media screen and (max-width: 1190px) {
+	.application{
+	
+	&-content{
+		
+		&-box{
+			
+			&:nth-child(2){
+				
+				&:after{
+					
+				}
+				&:before{
+					
+				}
+			}
+		}
+		&__heading{
+			font-size: 20px;
+			margin-top: 40px;
+		}
+	}
+}
+}
+@media screen and (max-width: 1023px) {
+	.application{
+		padding-top: 35px;
+    padding-bottom: 35px;
+	&-content{
+		margin-top: 25px;
+		&-box{
+			img{
+				width: 190px;
+			}
+			&:nth-child(2){
+				
+				&:after{
+					height: 110px;
+				}
+				&:before{
+					height: 110px;
+				}
+			}
+		}
+		&__heading{
+			font-size: 18px;
+			margin-top: 20px;
+			.brnone{display: none;}
+		}
+	}
+}
+}
+@media screen and (max-width: 767px) {
+	.application{
+		padding-top: 30px;
+    padding-bottom: 30px;
+	&-content{
+		
+		&-box{
+			img{
+				width: 150px;
+			}
+			&:nth-child(2){
+				
+				&:after{
+					height: 80px;
+					top: 35px;
+				}
+				&:before{
+					height: 80px;
+					top: 35px;
+				}
+			}
+		}
+		&__heading{
+			line-height: normal;
+			font-size: 16px;
+			margin-top: 20px;
+			.brnone{display: none;}
+		}
+	}
+}
+}
+@media screen and (max-width: 639px) {
+		.application{
+		
+	&-content{
+		flex-direction: column;
+		margin-top: 10px;
+		&-box{
+			width: 100%;
+			padding-top: 15px;
+			padding-bottom: 15px;
+			img{
+				width: 210px;
+			}
+			&:nth-child(2){
+				
+				&:after{
+					height: 1px;
+					width: 220px;
+					top: 0px;
+					left: 50%;
+					margin-left: -105px;
+				}
+				&:before{
+					height: 1px;
+					width: 210px;
+					bottom: 0px;
+					top: auto;
+					right: 50%;
+					margin-right: -105px;
+				}
+			}
+		}
+		&__heading{
+			line-height: normal;
+			font-size: 16px;
+			margin-top: 10px;
+			.brnone{display: none;}
+		}
+	}
+}
+}

@@ -1,0 +1,76 @@
+.footer{
+	padding-top: 135px;
+	padding-bottom: 50px;
+	&-content{
+		opacity: 0.7;
+		color: #666666;
+		font-family: Roboto;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 24px;
+		display: flex;
+		justify-content: space-between;
+		&__left{
+			text-align: left;
+			padding-left: 74px;
+			position: relative;
+			&:before{
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				background: url(../img/everad.svg) no-repeat center;
+				width: 54px;
+				height: 49px;
+			}
+			b{
+				color: #010101;
+				font-weight: bold;
+			}
+		}
+		&__center{
+			text-align: center;
+		}
+		&__right{
+			text-align: right;
+		}
+	}
+}
+@media screen and (max-width: 1023px) {
+	.footer{
+	padding-top: 30px;
+	padding-bottom: 25px;
+	&-content{
+		justify-content: center;
+		&__left{
+			display: none;
+		}
+		&__center{
+			position: relative;
+			padding-top: 54px;
+			&:before{
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 50%;
+				transform: translate(-50%);
+				background: url(../img/everad.svg) no-repeat center;
+				width: 54px;
+				height: 49px;
+			}
+		}
+		.location{
+			display: none;
+		}
+		&__right{
+			display: none;
+		}
+	}
+}
+}
+@media screen and (max-width: 767px) {
+
+}
+@media screen and (max-width: 639px) {
+
+}

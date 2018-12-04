@@ -3,6 +3,7 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
 
 * {
   box-sizing: border-box;
+  outline: none !important;
 }
 html, body {
   padding: 0;
@@ -49,7 +50,9 @@ svg {
   white-space: nowrap;
 }
 
-
+body{
+  overflow: hidden;
+}
 
 .btn {
   color: #ffffff;
@@ -70,6 +73,7 @@ svg {
   text-align: center;
   transition: all 0.3s ease;
   padding: 11px 0;
+  cursor: pointer;
   span{
     font-size: 16px;
     display: block;
@@ -82,7 +86,9 @@ svg {
 
   }
 }
-
+.logo-c{
+  color: #469f99; 
+}
 ::-webkit-input-placeholder { color: #949494;  font-family: Roboto;
 font-size: 16px;
 font-weight: 400;
@@ -117,13 +123,13 @@ line-height: 45px;}
 @import "common/proved.scss";
 @import "common/advantages.scss";
 @import "common/relieves.scss";
-@import "common/proved2.scss";
 @import "common/sert.scss";
 @import "common/reviews.scss";
 @import "common/application.scss";
 @import "common/order.scss";
 @import "common/footer.scss";
 @import "common/popup.scss";
+@import "common/animate.scss";
 
 
 

@@ -1,7 +1,7 @@
 .header{
 	background: #f2fafa;
 	position: relative;
-	z-index: 1;
+	z-index: 2;
 	padding-top: 40px;
 	&:after{
 		content: "";
@@ -12,23 +12,15 @@
 		background: url(../img/header-girl.png) no-repeat center;
 		width: 604px;
 		height: 624px;
-		z-index: -1;
+		z-index: 1;
 	}
-	&:before{
-		content: "";
-		position: absolute;
-		left: 50%;
-		transform: translate(-97%);
-		top: 0;
-		background: url(../img/header-bg.png) no-repeat center;
-		width: 985px;
-		height: 720px;
-		z-index: -2;
-	}
+	
 	&-top{
 		display: flex;
 		justify-content: space-between;
 		margin-bottom: 35px;
+		position: relative;
+		z-index: 1;
 		&__links{
 			display: -webkit-flex;
 			display: -moz-flex;
@@ -37,6 +29,8 @@
 			display: flex;
 			justify-content: flex-end;
 			align-items: center;
+			position: relative;
+			z-index: 5;
 			}
 		&__link{
 			margin-left: 50px;
@@ -98,6 +92,18 @@
 		font-size: 26px;
 		font-weight: 700;
 		line-height: 28px;
+		position: relative;
+		z-index: -1;
+		&:before{
+		content: "";
+		position: absolute;
+		bottom: -375px;
+    left: -370px;
+		background: url(../img/header-bg.png) no-repeat center;
+		width: 985px;
+		height: 720px;
+		z-index: -2;
+	}
 		}
 	&__lists{
 		margin-top: 70px;
@@ -138,6 +144,7 @@
 	background-color: #ffffff;
 	padding: 22px 18px 31px;
 	position: relative;
+	z-index: 2;
 	&:after{
 		content: "";
 		position: absolute;
@@ -377,6 +384,7 @@
  			&__title{
  				text-align: center;
  				line-height: 1;
+ 				
  				br{
  					display: none;
  				}
@@ -385,6 +393,9 @@
  				margin-top: 15px;
  				text-align: center;
  				font-size: 21px;
+ 				&:before{
+ 					display: none;
+ 				}
  			}
  			&__lists{
  				margin-top: 15px;

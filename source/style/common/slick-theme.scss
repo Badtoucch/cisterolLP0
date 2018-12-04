@@ -41,11 +41,11 @@ $slick-opacity-not-active: 0.25 !default;
 
 /* Slider */
 
-.slick-list {
-    .slick-loading & {
-        background: #fff slick-image-url("ajax-loader.gif") center center no-repeat;
-    }
-}
+// .slick-list {
+//     .slick-loading & {
+//         background: #fff slick-image-url("ajax-loader.gif") center center no-repeat;
+//     }
+// }
 
 /* Icons */
 @if $slick-font-family == "slick" {
@@ -69,7 +69,10 @@ $slick-opacity-not-active: 0.25 !default;
     line-height: 0px;
     font-size: 0px;
     cursor: pointer;
-    background: transparent;
+        width: 40px;
+    height: 40px;
+    background-color: #d5eaea;
+    border-radius: 50%;
     color: transparent;
     top: 50%;
     -webkit-transform: translate(0, -50%);
@@ -78,13 +81,10 @@ $slick-opacity-not-active: 0.25 !default;
     padding: 0;
     border: none;
     outline: none;
+    transition: all 1s;
     &:hover, &:focus {
         outline: none;
-        background: transparent;
-        color: transparent;
-        &:before {
-            opacity: $slick-opacity-on-hover;
-        }
+        background-color: #7abdb8;
     }
     &.slick-disabled:before {
         opacity: $slick-opacity-not-active;
@@ -101,30 +101,33 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 .slick-prev {
-    left: -25px;
-    [dir="rtl"] & {
-        left: auto;
-        right: -25px;
-    }
+    left: -46px;
     &:before {
-        content: $slick-prev-character;
-        [dir="rtl"] & {
-            content: $slick-next-character;
-        }
+        content: "";
+        width: 10px;
+        height: 17px;
+        background: url(../img/slide-icon.svg);
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-top: -9px;
+        margin-left: -7px;
+        transform: rotate(-180deg);
     }
 }
 
 .slick-next {
-    right: -25px;
-    [dir="rtl"] & {
-        left: -25px;
-        right: auto;
-    }
+    right: -46px;
     &:before {
-        content: $slick-next-character;
-        [dir="rtl"] & {
-            content: $slick-prev-character;
-        }
+        content: "";
+        width: 10px;
+        height: 17px;
+        background: url(../img/slide-icon.svg);
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-top: -9px;
+        margin-left: -3px;
     }
 }
 
